@@ -1,0 +1,217 @@
+.header {
+    border-bottom: 1px solid #bbbbbe;
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    width: fit-content;
+    height: fit-content;
+    margin: auto 30px;
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 30px;
+}
+
+.logo > a {
+    margin: auto auto auto auto;
+    text-decoration: none;
+    color: black;
+}
+
+.header > .navbar {
+    width: fit-content;
+    height: fit-content;
+    margin: auto 20px;
+}
+
+.menulist {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar > .hamburger-menu {
+    display: none;
+}
+
+.menulist ul {
+    /*border: 1px solid black;*/
+    height: fit-content;
+    width: fit-content;
+    margin: auto 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.menulist > ul > li {
+    list-style: none;
+    margin: auto 10px;
+    position: relative;
+}
+
+.menulist > ul > li::after {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: #455e1f;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    transition: ease-in-out 0.4s;
+}
+
+.menulist > ul > li:hover::after {
+    width: 100%;
+}
+
+.menulist > ul > li > a {
+    text-decoration: none;
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-family: Candara;
+    font-size: 20px;
+}
+
+.acc-links {
+    /*border: 1px solid blue;*/
+    min-width: 200px;
+    width: fit-content;
+    height: 60px;
+    margin: auto 0;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    position: relative;
+}
+
+.acc-links > img {
+    /*width: 50px;*/
+    height: 85%;
+    margin: auto 0;
+    box-sizing: border-box;
+}
+
+.acc-links > p {
+    margin: auto 10px;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 25px;
+}
+
+.acc-links .navbar-menu {
+    border: 1px solid rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 10px 0;
+    position: absolute;
+    top: 58px;
+    left: 00px;
+    box-sizing: border-box;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-menu > a {
+    width: 100%;
+    height: fit-content;
+    padding: 6px 0;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    font-family: Candara;
+    font-size: 1.22vw;
+    color: rgb(0, 0, 0);
+}
+
+.navbar-menu > a:hover {
+    background-color: rgba(4, 4, 4, 0.1);
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        border: 1px solid blue;
+        width: fit-content;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .navbar > .hamburger-menu {
+        border: 1px solid red;
+        width: 30px;
+        height: 30px;
+        margin-right: 0;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+    }
+
+    .menulist {
+        border: 1px solid #000000;
+        border-radius: 5px;
+        background-color: white;
+        width: fit-content;
+        margin: auto auto auto 0;
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 35px;
+        right: -15px;
+        z-index: 2;
+    }
+
+    .menulist ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menulist > ul > li {
+        border: 1px solid yellow;
+        list-style: none;
+        width: 200px;
+        text-align: center;
+        margin: 5px auto;
+        padding: 5px 15px;
+        position: relative;
+    }
+
+    .menulist > ul > li::after {
+        display: none;
+    }
+
+    .menulist > ul > li > a {
+        font-size: 25px;
+    }
+
+    .acc-links {
+        height: 50px;
+        margin: 5px auto;
+    }
+
+    .acc-links:active {
+        border: 1px solid blue;
+    }
+
+    .acc-links > p {
+        margin: auto 10px;
+        font-family: 'Signika Negative', sans-serif;
+        font-size: 20px;
+    }
+
+    .acc-links .navbar-menu {
+        top: 52px;
+    }
+}
+
+

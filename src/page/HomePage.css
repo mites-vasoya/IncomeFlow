@@ -1,0 +1,139 @@
+.homepage {
+    /*border: 2px solid #80ff00;*/
+    width: 100vw;
+    height: calc(100vh - 80px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.homepage .current-balance-cards {
+    border: 1px solid black;
+    width: 90%;
+    height: 100px;
+    margin: 40px auto 20px auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.current-balance-cards > .card {
+    border: 1px solid #24908c;
+    border-radius: 25px;
+    background-color: #24908c;
+    color: white;
+    width: 20%;
+    height: 100%;
+    margin: auto 10px;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card > .acc-name {
+    /*border: 1px solid yellow;*/
+    width: fit-content;
+    height: fit-content;
+    padding: 0px;
+    margin: auto 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card > .acc-purse-value {
+    /*border: 1px solid yellow;*/
+    width: fit-content;
+    height: fit-content;
+    padding: 0px;
+    margin: auto 0;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.card > .acc-purse-value::before {
+    content: "₹"
+}
+
+.current-balance-cards > .add-card {
+    border: 3px dashed #24908c;
+    background-color: white;
+}
+
+.add-card > .new-acc-card {
+    margin: auto;
+    font-family: "Doppio One";
+    font-size: 25px;
+    color: #24908c;
+}
+
+.homepage > .full-view {
+    border: 1px solid black;
+    width: 90%;
+    height: 38vw;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.full-view > .statement-table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.statement-table > .table {
+    /*border: 1px solid #fd0000;*/
+    width: 48%;
+    margin: 20px auto 0 auto;
+    border-collapse: collapse;
+}
+
+.table th {
+    border: 1px solid black;
+    text-align: center;
+    font-size: 25px;
+    border-collapse: collapse;
+}
+
+.table td {
+    border: 1px solid green;
+    text-align: center;
+    padding: 5px;
+    border-collapse: collapse;
+}
+
+.speed-dial {
+    height: fit-content;
+    width: 70px;
+    position: fixed;
+    bottom: 220px;
+    right: 15px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 650px) {
+    .card > .acc-purse-value {
+        font-size: 20px;
+    }
+
+    .add-card > .new-acc-card {
+        margin: auto;
+        font-family: "Doppio One";
+        font-size: 18px;
+        color: #24908c;
+    }
+
+    .homepage > .full-view {
+        padding: 0px 0 20px 0;
+        width: 90%;
+        height: fit-content;
+    }
+
+    .full-view > .statement-table {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
