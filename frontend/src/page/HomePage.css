@@ -9,7 +9,6 @@
 }
 
 .homepage .current-balance-cards {
-    border: 1px solid black;
     width: 90%;
     height: 100px;
     margin: 40px auto 20px auto;
@@ -20,7 +19,7 @@
 .current-balance-cards > .card {
     border: 1px solid #24908c;
     border-radius: 25px;
-    background-color: #24908c;
+    background-color: #253c4d;
     color: white;
     width: 20%;
     height: 100%;
@@ -33,7 +32,6 @@
 }
 
 .card > .acc-name {
-    /*border: 1px solid yellow;*/
     width: fit-content;
     height: fit-content;
     padding: 0px;
@@ -57,7 +55,7 @@
 }
 
 .current-balance-cards > .add-card {
-    border: 3px dashed #24908c;
+    border: 3px dashed #253c4d;
     background-color: white;
 }
 
@@ -65,11 +63,11 @@
     margin: auto;
     font-family: "Doppio One";
     font-size: 25px;
-    color: #24908c;
+    color: #253c4d;
 }
 
 .homepage > .full-view {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     width: 90%;
     height: 38vw;
     margin: 0 auto;
@@ -84,25 +82,11 @@
     justify-content: space-between;
 }
 
-.statement-table > .table {
-    /*border: 1px solid #fd0000;*/
-    width: 48%;
-    margin: 20px auto 0 auto;
-    border-collapse: collapse;
-}
-
-.table th {
-    border: 1px solid black;
-    text-align: center;
-    font-size: 25px;
-    border-collapse: collapse;
-}
-
-.table td {
-    border: 1px solid green;
-    text-align: center;
-    padding: 5px;
-    border-collapse: collapse;
+.data-table {
+    border: 2px solid rgba(4, 4, 4, 0.25);
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px;
 }
 
 .speed-dial {
